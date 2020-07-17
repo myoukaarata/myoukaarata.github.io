@@ -1,14 +1,13 @@
-importScripts("precache-manifest.7255c1cf52a20163905d7d17f1332ec6.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("precache-manifest.3a089a3d582bbe01e1df6b30cd1b9175.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const schedule = "http://127.0.0.1:8887/#todayCompetitions";
 const home = "http://127.0.0.1:8887";
 
 workbox.precaching.precacheAndRoute([
   { url: "/", revision: "2" },
-  { url: "/bundle.js", revision: "6" },
+  { url: "/bundle.js", revision: "2" },
   { url: "/manifest.json", revision: "1" },
   { url: "/sw.js", revision: "1" },
-  { url: "/index.html", revision: "3" },
   { url: "/clipart-ball-logo.png", revision: "1" },
   { url: "/assets/img/hero1.jpg", revision: "1" },
   { url: "/assets/img/hero2.jpg", revision: "1" },
@@ -18,7 +17,7 @@ workbox.precaching.precacheAndRoute([
   { url: "/assets/components/playerMatches.html", revision: "1" },
   { url: "/assets/components/scheduleTeams.html", revision: "1" },
   { url: "/assets/components/specificPlayer.html", revision: "1" },
-  { url: "/assets/components/nav.html", revision: "1" },
+  { url: "/assets/components/nav.html", revision: "2" },
   { url: "/assets/components/home.html", revision: "1" },
   { url: "/assets/components/saved.html", revision: "1" },
   { url: "/assets/components/leagueStandings.html", revision: "1" },
