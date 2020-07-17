@@ -1,13 +1,13 @@
-importScripts("precache-manifest.d68a490dd7e655d29d4ff9532cf72d48.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("precache-manifest.5763dc620240b99ce30d82b2f83e5b4e.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const schedule = "https://myoukaarata.github.io/#todayCompetitions";
 const home = "https://myoukaarata.github.io";
 
 workbox.precaching.precacheAndRoute([
-  { url: "/", revision: "2" },
-  { url: "/bundle.js", revision: "1" },
+  { url: "/", revision: "11" },
+  { url: "/bundle.js", revision: "11" },
   { url: "/manifest.json", revision: "1" },
-  { url: "/sw.js", revision: "1" },
+  { url: "/sw.js", revision: "3" },
   { url: "/clipart-ball-logo.png", revision: "1" },
   { url: "/assets/img/hero1.jpg", revision: "1" },
   { url: "/assets/img/hero2.jpg", revision: "1" },
@@ -17,7 +17,7 @@ workbox.precaching.precacheAndRoute([
   { url: "/assets/components/playerMatches.html", revision: "1" },
   { url: "/assets/components/scheduleTeams.html", revision: "1" },
   { url: "/assets/components/specificPlayer.html", revision: "1" },
-  { url: "/assets/components/nav.html", revision: "2" },
+  { url: "/assets/components/nav.html", revision: "1" },
   { url: "/assets/components/home.html", revision: "1" },
   { url: "/assets/components/saved.html", revision: "1" },
   { url: "/assets/components/leagueStandings.html", revision: "1" },
@@ -29,14 +29,14 @@ workbox.precaching.precacheAndRoute([
     url: "/assets/components/bestCompetitionsScore.html",
     revision: "1",
   },
-  { url: "/assets/icons/icon-72x72.png", revision: "2" },
-  { url: "/assets/icons/icon-96x96.png", revision: "2" },
-  { url: "/assets/icons/icon-128x128.png", revision: "2" },
-  { url: "/assets/icons/icon-144x144.png", revision: "2" },
-  { url: "/assets/icons/icon-152x152.png", revision: "2" },
-  { url: "/assets/icons/icon-192x192.png", revision: "2" },
-  { url: "/assets/icons/icon-384x384.png", revision: "2" },
-  { url: "/assets/icons/icon-512x512.png", revision: "2" },
+  { url: "/assets/icons/icon-72x72.png", revision: "1" },
+  { url: "/assets/icons/icon-96x96.png", revision: "1" },
+  { url: "/assets/icons/icon-128x128.png", revision: "1" },
+  { url: "/assets/icons/icon-144x144.png", revision: "1" },
+  { url: "/assets/icons/icon-152x152.png", revision: "1" },
+  { url: "/assets/icons/icon-192x192.png", revision: "1" },
+  { url: "/assets/icons/icon-384x384.png", revision: "1" },
+  { url: "/assets/icons/icon-512x512.png", revision: "1" },
   {
     url: "https://fonts.googleapis.com/icon?family=Material+Icons",
     revision: "1",
