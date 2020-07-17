@@ -1,11 +1,11 @@
-importScripts("precache-manifest.3a089a3d582bbe01e1df6b30cd1b9175.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("precache-manifest.d68a490dd7e655d29d4ff9532cf72d48.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 const schedule = "https://myoukaarata.github.io/#todayCompetitions";
 const home = "https://myoukaarata.github.io";
 
 workbox.precaching.precacheAndRoute([
   { url: "/", revision: "2" },
-  { url: "/bundle.js", revision: "2" },
+  { url: "/bundle.js", revision: "1" },
   { url: "/manifest.json", revision: "1" },
   { url: "/sw.js", revision: "1" },
   { url: "/clipart-ball-logo.png", revision: "1" },
