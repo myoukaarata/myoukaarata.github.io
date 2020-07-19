@@ -4,8 +4,8 @@ const schedule = "https://myoukaarata.github.io/#todayCompetitions";
 const home = "https://myoukaarata.github.io";
 
 workbox.precaching.precacheAndRoute([
-  { url: "/", revision: "11" },
-  { url: "/bundle.js", revision: "11" },
+  { url: "/", revision: "10" },
+  { url: "/bundle.js", revision: "10" },
   { url: "/manifest.json", revision: "1" },
   { url: "/sw.js", revision: "3" },
   { url: "/clipart-ball-logo.png", revision: "1" },
@@ -54,7 +54,7 @@ workbox.routing.registerRoute(
     cacheName: "src",
     plugins: [
       new workbox.expiration.Plugin({
-        maxAgeSeconds: 24 * 60 * 60,
+        maxAgeSeconds: 24 * 60,
       }),
     ],
   })
