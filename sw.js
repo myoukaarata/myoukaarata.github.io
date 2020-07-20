@@ -52,11 +52,6 @@ workbox.routing.registerRoute(
   /https:\/\/api\.football-data\.org\/v2/,
   new workbox.strategies.StaleWhileRevalidate({
     cacheName: "src",
-    plugins: [
-      new workbox.expiration.Plugin({
-        maxAgeSeconds: 6 * 60 * 60,
-      }),
-    ],
   })
 );
 
