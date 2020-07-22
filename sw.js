@@ -7,7 +7,7 @@ workbox.precaching.precacheAndRoute([
   { url: "/", revision: "10" },
   { url: "/bundle.js", revision: "10" },
   { url: "/manifest.json", revision: "1" },
-  { url: "/sw.js", revision: "3" },
+  { url: "/sw.js", revision: "4" },
   { url: "/clipart-ball-logo.png", revision: "1" },
   { url: "/assets/img/hero1.jpg", revision: "1" },
   { url: "/assets/img/hero2.jpg", revision: "1" },
@@ -50,9 +50,7 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   /https:\/\/api\.football-data\.org\/v2/,
-  new workbox.strategies.StaleWhileRevalidate({
-    cacheName: "src",
-  })
+  new workbox.strategies.StaleWhileRevalidate()
 );
 
 workbox.routing.registerRoute(
