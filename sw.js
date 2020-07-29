@@ -50,7 +50,7 @@ workbox.precaching.precacheAndRoute([
 
 workbox.routing.registerRoute(
   /https:\/\/api\.football-data\.org\/v2/,
-  new workbox.strategies.StaleWhileRevalidate()
+  new workbox.strategies.NetworkFirst()
 );
 
 workbox.routing.registerRoute(
